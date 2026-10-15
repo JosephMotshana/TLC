@@ -3,8 +3,47 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-tlc-light text-tlc-dark antialiased;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  :root {
+    --tlc-blue: #51688B;
+    --tlc-gold: #EAA336;
+    --tlc-dark: #1E293B;
+    --tlc-light: #F8FAFC;
   }
+
+  body {
+    background-color: var(--tlc-light);
+    color: var(--tlc-dark);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGold {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(234, 163, 54, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(234, 163, 54, 0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.pulse-gold {
+  animation: pulseGold 2.5s infinite;
+}
+
+.glass-nav {
+  background-color: rgba(81, 104, 139, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(81, 104, 139, 0.92) 0%, rgba(30, 41, 59, 0.88) 100%);
 }
