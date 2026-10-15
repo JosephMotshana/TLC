@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { churchInfo } from '../data/churchData'; // <-- Fixed relative path and lowercase filename
-import { Phone, Mail, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, Clock, Send, CheckCircle2, Video } from 'lucide-react';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -40,8 +40,21 @@ export default function Contact() {
             <div className="flex items-start space-x-4 bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
               <Clock className="w-6 h-6 text-tlc-gold flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-tlc-dark">Sunday Gathering</h3>
-                <p className="text-gray-600 text-sm">{churchInfo.serviceTimes}</p>
+                <h3 className="font-bold text-tlc-dark">Service Times</h3>
+                <ul className="mt-1 space-y-1 text-gray-600 text-sm">
+                  {churchInfo.serviceTimes.map((serviceTime) => (
+                    <li key={serviceTime}>{serviceTime}</li>
+                  ))}
+                </ul>
+                <a
+                  href={churchInfo.onlinePrayerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex items-center gap-2 rounded-lg bg-tlc-blue px-4 py-2 font-semibold text-white transition-colors hover:bg-tlc-dark"
+                >
+                  <Video className="h-4 w-4" />
+                  Join Online Prayer
+                </a>
               </div>
             </div>
           </div>

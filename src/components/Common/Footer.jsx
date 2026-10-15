@@ -1,4 +1,4 @@
-import { Phone, Mail, Clock, Heart, MessageSquare } from 'lucide-react';
+import { Phone, Mail, Clock, Heart, MessageSquare, Video } from 'lucide-react';
 import { churchInfo } from '../../data/churchData'; // Fixed path (../../) and lowercase filename (churchData)
 
 export default function Footer({ setActiveTab, onOpenModal }) {
@@ -33,8 +33,21 @@ export default function Footer({ setActiveTab, onOpenModal }) {
             <div className="flex items-start space-x-3 text-gray-300">
               <Clock className="w-5 h-5 text-tlc-gold flex-shrink-0 mt-1" />
               <div>
-                <p className="font-semibold text-white">Sunday Worship Service</p>
-                <p className="text-sm">{churchInfo.serviceTimes}</p>
+                <p className="font-semibold text-white">Service Times</p>
+                <ul className="mt-1 space-y-1 text-sm">
+                  {churchInfo.serviceTimes.map((serviceTime) => (
+                    <li key={serviceTime}>{serviceTime}</li>
+                  ))}
+                </ul>
+                <a
+                  href={churchInfo.onlinePrayerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center gap-2 rounded-lg bg-tlc-gold px-3 py-2 font-semibold text-tlc-dark transition-colors hover:bg-yellow-400"
+                >
+                  <Video className="h-4 w-4" />
+                  Join Online Prayer
+                </a>
               </div>
             </div>
 
