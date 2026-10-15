@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Navbar from './components/common/Navbar';
-import Footer from './components/common/Footer';
+import Navbar from './components/Common/Navbar';
+import Footer from './components/Common/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Salvation from './pages/Salvation';
