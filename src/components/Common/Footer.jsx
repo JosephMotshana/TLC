@@ -3,17 +3,18 @@ import { churchInfo } from '../../data/churchData'; // Fixed path (../../) and l
 
 export default function Footer({ setActiveTab, onOpenModal }) {
   return (
-    <footer className="bg-tlc-dark text-white pt-16 pb-12 border-t-4 border-tlc-gold">
+    <footer className="bg-tlc-blue text-white pt-16 pb-12 border-t-4 border-tlc-gold">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           
           {/* Column 1: Info */}
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden border border-tlc-gold">
-                <img src="/logo.jpeg" alt="TLC" className="w-full h-full object-cover" />
-              </div>
-              <span className="text-xl font-bold tracking-wide text-tlc-gold">TRUE LIGHT CHURCH</span>
+            <div className="mb-4">
+              <img
+                src="/logo.jpeg"
+                alt="True Light Church"
+                className="h-24 w-auto max-w-full object-contain sm:h-28"
+              />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
               {churchInfo.tagline}
@@ -95,7 +96,7 @@ export default function Footer({ setActiveTab, onOpenModal }) {
 
         </div>
 
-        <div className="mt-12 pt-6 border-t border-gray-800 text-center text-xs text-gray-400">
+        <div className="mt-12 pt-6 border-t border-white/20 text-center text-xs text-gray-200">
           <p>© {new Date().getFullYear()} True Light Church. All Rights Reserved. Built with faith & purpose.</p>
         </div>
       </div>

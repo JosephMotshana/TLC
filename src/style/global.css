@@ -40,10 +40,9 @@
 }
 
 .glass-nav {
-  background-color: rgba(81, 104, 139, 0.95);
-  backdrop-filter: blur(8px);
+  background-color: var(--tlc-blue);
 }
 
 .hero-overlay {
   background: linear-gradient(135deg, rgba(81, 104, 139, 0.92) 0%, rgba(30, 41, 59, 0.88) 100%);
-}
+} 

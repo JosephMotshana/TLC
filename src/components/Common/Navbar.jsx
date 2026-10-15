@@ -23,22 +23,20 @@ export default function Navbar({ activeTab, setActiveTab, onOpenModal }) {
   return (
     <nav className="glass-nav sticky top-0 z-50 text-white shadow-lg border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-20 sm:h-24">
           {/* Logo & Brand Name */}
-          <div 
-            className="flex items-center space-x-3 cursor-pointer group" 
+          <button
+            type="button"
+            className="flex shrink-0 items-center cursor-pointer group"
             onClick={() => handleNavClick('home')}
+            aria-label="True Light Church home"
           >
-            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-tlc-gold flex items-center justify-center bg-white shadow-md">
-              <img 
-                src={logo} 
-                alt="True Light Church Logo" 
-                className="w-full h-full object-cover"
-                onError={(e) => { e.target.style.display = 'none'; }}
-              />
-            </div>
-
-          </div>
+            <img
+              src={logo}
+              alt="True Light Church"
+              className="h-16 sm:h-20 w-auto max-w-[180px] object-contain"
+            />
+          </button>
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">

@@ -2,6 +2,14 @@ import { ArrowRight, Sun, Heart, Sparkles } from 'lucide-react';
 import { churchInfo } from '../data/churchData'; // Fixed path (../) and lowercase filename (churchData)
 
 export default function Home({ setActiveTab, onOpenModal }) {
+  const pageLinks = [
+    { id: 'about', title: 'About Us', description: 'Learn who we are and what we believe.' },
+    { id: 'salvation', title: 'New Here?', description: 'Take your next step in faith.' },
+    { id: 'membership', title: 'Membership', description: 'Find out how to become part of our church.' },
+    { id: 'ministries', title: 'Our Ministries', description: 'Discover ways to connect, grow, and serve.' },
+    { id: 'contact', title: 'Contact Us', description: 'Get in touch or find our service information.' },
+  ];
+
   return (
     <div className="space-y-16 pb-12">
       {/* Hero Section */}
@@ -19,7 +27,7 @@ export default function Home({ setActiveTab, onOpenModal }) {
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-            Arise & Shine for the Light of the World
+            Arise, shine, for your light has come and the glory of the LORD rises upon you
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-200 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
@@ -41,6 +49,30 @@ export default function Home({ setActiveTab, onOpenModal }) {
               Become a Member
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* Quick Links */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-8">
+          <h2 className="text-xs font-bold text-tlc-blue tracking-widest uppercase mb-2">EXPLORE</h2>
+          <h3 className="text-3xl font-extrabold text-tlc-dark">Find Your Next Step</h3>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          {pageLinks.map((page) => (
+            <button
+              key={page.id}
+              type="button"
+              onClick={() => setActiveTab(page.id)}
+              className="group rounded-2xl border border-gray-100 bg-white p-5 text-left shadow-md transition-all hover:-translate-y-1 hover:border-tlc-gold hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tlc-blue"
+            >
+              <span className="flex items-center justify-between gap-2 font-bold text-tlc-dark">
+                {page.title}
+                <ArrowRight className="h-4 w-4 shrink-0 text-tlc-gold transition-transform group-hover:translate-x-1" />
+              </span>
+              <span className="mt-2 block text-sm leading-relaxed text-gray-600">{page.description}</span>
+            </button>
+          ))}
         </div>
       </section>
 
