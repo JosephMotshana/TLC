@@ -64,7 +64,7 @@ export const churchInfo = {
   ministries: [
     { name: "Praise & Worship and Prayer", leader: "Pastor Tebogo", desc: "Praise & Worship team to create a God-centered atmosphere enabling the church to worship God in spirit and in truth. Includes prayer ministry facilitation." },
     { name: "Hospitality Ministry", leader: "Minister Richard", desc: "Hospitality ministry team to create a welcoming atmosphere and serving the church with love, perseverance, and joy." },
-    { name: "Connect & Growth", leader: "Minister Richard", desc: "Internal Growth ministry focusing on onboarding new members, building strong foundation of faith, discipleship, and culture of prayer." },
+    { name: "Connect & Growth", leader: "Minister Mo", desc: "Internal Growth ministry focusing on onboarding new members, building strong foundation of faith, discipleship, and culture of prayer." },
     { name: "Music & Multimedia", leader: "Minister Marothi & Joseph", desc: "Focused on training skilled musicians, preparing them to serve in the ministry of music, and managing multimedia/connectivity." },
     { name: "Evangelistic Outreaches", leader: "Pastors Moses & Evangelist Samuel", desc: "Focuses on welfare and soul-winning outreaches to attract people to Jesus and prepare communities for church planting." },
     { name: "Youth & Children Ministry", leader: "Minister Kagiso", desc: "Creates a Christ-centered learning platform for children to play, learn, and praise God in a safe and caring environment." }
