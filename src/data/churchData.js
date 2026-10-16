@@ -5,10 +5,10 @@ export const churchInfo = {
   whatsapp: "0761016235",
   email: "leeannmathekga7@gmail.com",
   onlinePrayerUrl: "https://us06web.zoom.us/j/82110151338?pwd=htfkXxLc6NR0jE8gZJf4V3ROrhBWQv.1",
-  serviceTimes: ["Sundays at 10:00 - 12:00",
+  serviceTimes: ["Sundays at 10:00 - 12:00 (In-person)",
                   "Wednesdays at 18:30 - 20:00 Hybrid Service (In-person and Online)",
                   "Online Prayer at 05h00 - 06h00 10:00 Monday to Friday and from 06h00 - 07h00 on Saturdays,Sundays and Public Holidays",
-                  "online Prayer Friday Midnight at 00h00 - 01h00 crossing over to Saturday online"
+                  "online Prayer Friday Midnight at 00h00 - 01h00 crossing over to Saturday"
                 ],
   visionYears: "2025 - 2029",
   visionScripture: "The least of you will become a thousand, the smallest a mighty nation. I am the LORD; in its time I will do this swiftly. — Isaiah 60:22",

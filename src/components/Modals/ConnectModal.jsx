@@ -58,7 +58,7 @@ export default function ConnectModal({ isOpen, onClose }) {
                 <option>Request Prayer</option>
                 <option>Request Free Bible</option>
                 <option>Membership Class Info</option>
-                <option>Water Baptism Request</option>
+                <option>Request Baptism</option>
               </select>
             </div>
 

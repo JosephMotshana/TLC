@@ -25,7 +25,7 @@ export default function Salvation({ onOpenModal }) {
           </div>
           <div className="bg-tlc-light p-5 rounded-xl">
             <h3 className="font-bold text-tlc-blue mb-1">2. You Are God's Child</h3>
-            <p className="text-sm text-gray-600">You have been adopted into God’s global, eternal family (John 1:12).</p>
+            <p className="text-sm text-gray-600">You have been adopted into God’s eternal family (John 1:12).</p>
           </div>
           <div className="bg-tlc-light p-5 rounded-xl">
             <h3 className="font-bold text-tlc-blue mb-1">3. You Have Purpose</h3>
