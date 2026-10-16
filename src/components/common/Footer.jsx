@@ -57,7 +57,7 @@ export default function Footer({ setActiveTab, onOpenModal }) {
               <div>
                 <p className="font-semibold text-white">Address</p>
                 <address className="text-sm not-italic">
-                  Ext 0, 827 United States of America Ave, Cosmo City, Roodepoort, 2188
+                  Extens 0, 827 United States of America Ave, Cosmo City, Roodepoort, 2188
                 </address>
               </div>
             </div>
