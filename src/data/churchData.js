@@ -1,8 +1,8 @@
 export const churchInfo = {
   name: "True Light Church",
   tagline: "Arise, shine to win souls of all nations for Christ Jesus.",
-  phone: "076 101 6235",
-  whatsapp: "0761016235",
+  phone: "081 752 8300",
+  whatsapp: "081 752 8300",
   email: "leeannmathekga7@gmail.com",
   onlinePrayerUrl: "https://us06web.zoom.us/j/82110151338?pwd=htfkXxLc6NR0jE8gZJf4V3ROrhBWQv.1",
   serviceTimes: ["Sundays at 10:00 - 12:00 (In-person)",
